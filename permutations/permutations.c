@@ -1,3 +1,5 @@
+/* Example from  http://rosettacode.org/wiki/Permutations#C */
+
 #include <stdio.h>
 #include <stdlib.h>
 
