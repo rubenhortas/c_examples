@@ -4,7 +4,7 @@ Small examples of C code
 ## Compile
 
 ```console
-	gcc -O3 example.c -o example.out
+gcc -O3 example.c -o example.out
 ```
 
 ## Support
