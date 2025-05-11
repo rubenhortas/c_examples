@@ -1,5 +1,5 @@
 # c examples
-Small examples of C code
+Small examples of standard C code
 
 ## Compile
 
