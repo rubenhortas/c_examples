@@ -63,4 +63,4 @@ To compile any of these examples, I recommend:
 
 ## :star: Support
 
-If you find these examples useful, please consider starring crepository!
+If you find these examples useful, please, consider starring crepository!
