@@ -8,6 +8,8 @@ A collection of of standard C examples.
 
 ![GitHub](https://img.shields.io/github/license/rubenhortas/c_examples)
 
+## :pill: About these examples
+
 To compile any of these examples, I recommend:
 
 ```gcc -std=c11 -Os example.c -o example_size.out```
