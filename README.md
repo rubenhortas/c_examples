@@ -7,7 +7,7 @@ A collection of of standard C examples.
 
 ![GitHub](https://img.shields.io/github/license/rubenhortas/c_examples)
 
-## :pill: About these examples
+## :construction: About these examples
 
 To compile any of these examples, I recommend:
 
