@@ -25,7 +25,7 @@ To compile any of these examples, I recommend:
 | Union | PascalCase         | PascalCase (UpperCamelCase) | MyUnion       | Use PascalCase for the tag name, and then use a typedef with a clear suffix like "_t" for the type definition itself.|
 | Variables                  | snake_case                  | my_variable   | snake_case is the most traditional C style, but lowerCamelCase is also accepted.                                     |
 
-## :bookmar: Commentary conventions
+## :bookmark: Commentary conventions
 
 | Name           | Example                    | Usage                                                      |
 |----------------|----------------------------|------------------------------------------------------------|
