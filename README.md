@@ -32,6 +32,29 @@ To compile any of these examples, I recommend:
 | Block comments | /* very long comment... */ | Multi-line descriptions, file headers and function headers |
 | Line comments  | // comment...              | Short explanation of a specific line                       |
 
+### File headers
+
+```c
+/**
+ * @file main.c
+ * @author Name
+ * @date 2026-01-19
+ * @brief Brief description of what this file does.
+ */
+```
+
+## Function headers
+
+```c
+/**
+ * Do shomething...
+ *
+ * @param input Data to do something...
+ * @return Data returned...
+ * @note Very important note.
+ */
+```
+
 ## Compile flags
 
 | Environment | Flags                                                                                       | 
