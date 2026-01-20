@@ -11,5 +11,5 @@ int main() {
     printf("float (formatted): '%.2f'\n", f); // Two decimal places
     printf("char: '%c'\n", c);
 
-  return 0;
+    return 0;
 }
