@@ -7,7 +7,7 @@ A collection of of standard C examples.
 
 ![GitHub](https://img.shields.io/github/license/rubenhortas/c_examples)
 
-## :construction: About these examples
+## :exclamation: About these examples
 
 To compile any of these examples, I recommend:
 
@@ -43,7 +43,7 @@ To compile any of these examples, I recommend:
  */
 ```
 
-## Function headers
+### Function headers
 
 ```c
 /**
@@ -55,7 +55,7 @@ To compile any of these examples, I recommend:
  */
 ```
 
-## Compile flags
+## :construction: Compile flags
 
 | Environment | Flags                                                                                       | 
 |-------------|---------------------------------------------------------------------------------------------|
