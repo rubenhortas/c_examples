@@ -7,9 +7,9 @@ A collection of of standard C examples.
 
 ![GitHub](https://img.shields.io/github/license/rubenhortas/c_examples)
 
-## :exclamation: About these examples
+## :exclamation: Recomendations
 
-To compile any of these examples, I recommend:
+To compile any of these examples, I recommend using the flags `-std=c11` and `-Os`:
 
 ```gcc -std=c11 -Os example.c -o example_size.out```
 
