@@ -7,6 +7,7 @@ int main() {
     int num2 = 64;
 
     printf("Max (%d, %d): %d\n", num1, num2, max(num1,num2));
+    // return: Max (2, 64): 64
 
     return 0;
 }
