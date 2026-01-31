@@ -6,7 +6,8 @@ int main() {
     double d = 3.6;
     float f = 1.3;
     char c = 'A';
-    bool is_even = true;
+    bool is_true = true;
+    bool is_false = false;
 
     printf("int: '%d'\n", i);
     // return: int: '40'
@@ -20,8 +21,11 @@ int main() {
     printf("char: '%c'\n", c);
     // return: char: 'A'
 
-    printf("is_even: %d\n", is_even);
-    // return: is_even: 1
+    printf("is_true: %d\n", is_true);
+    // return: is_true: 1
+
+    printf("is_false: %d\n", is_false);
+    // return: is_false: 0
 
     return 0;
 }
