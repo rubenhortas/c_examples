@@ -5,10 +5,14 @@ int main() {
     int chosenNumbers[5]; // Array with unknown values
 
     printf("First number: '%d'\n", lottoNumbers[0]); // Arrays are initialized to 0
+    // return: First number: '4'
+
     printf("Last number: '%d'\n", lottoNumbers[5]);
+    // return: Last number: '41'
 
     lottoNumbers[5] = 42;
     printf("Last number (fixed): '%d'\n", lottoNumbers[5]);
+    // return: Last number (fixed): '42'
 
     // Assign values to the array
     for(int i = 0; i<5; i++) {
@@ -20,7 +24,9 @@ int main() {
     for(int i=0; i<5; i++) {
         printf("%d,", chosenNumbers[i]);
     }
+    // return: Chosen numbers: ....
 
     printf("\n");
     return 0;
 }
+
