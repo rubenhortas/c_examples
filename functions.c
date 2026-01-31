@@ -6,37 +6,37 @@
  * A function prototype is a statement that tells the compiler about the function’s name,
  * its return type, numbers, and data types of its parameters.
  */
-void printVolume(int value);
-int getMaxVolume();
-void setVolume(int *volume, int value);
+void print_volume(int value);
+int get_max_volume();
+void set_volume(int *volume, int value);
 
 int main() {
     int volume = 8;
-    int maxVolume = 0;
+    int max_volume = 0;
 
-    printVolume(volume);
+    print_volume(volume);
 
-    maxVolume = getMaxVolume();
-    printf("Max volume is %d\n", maxVolume);
+    max_volume = get_max_volume();
+    printf("Max volume is %d\n", max_volume);
 
-    setVolume(&volume, 11);
-    printVolume(volume);
+    set_volume(&volume, 11);
+    print_volume(volume);
 
     return 0;
 }
 
 // void function does not return nothing
-void printVolume(int value) {
+void print_volume(int value) {
     printf("Volume is at %d\n", value);
 }
 
 // Return a value
-int getMaxVolume(){
+int get_max_volume(){
     return 11;
 }
 
 // Modify a value
-void setVolume(int *volume, int value) {
+void set_volume(int *volume, int value) {
     *volume = value;
 }
 
