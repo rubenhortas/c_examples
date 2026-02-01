@@ -11,11 +11,11 @@ A collection of of standard C examples.
 
 To compile any of these examples, I recommend using the `Makefile`:
 
-`make`
+`$ make`
 
 If you want to comiple a single file, I recommend the following flags:
 
-`-g -fsanitize=address -std=c11 -Os example.c -o example_size.out`
+`$ gcc -g -fsanitize=address -std=c11 -Os example.c -o example_size.out`
 
 ## :bookmark: C naming conventions
 
