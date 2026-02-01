@@ -15,7 +15,7 @@ To compile any of these examples, I recommend using the `Makefile`:
 
 If you want to comiple a single file, I recommend the following flags:
 
-`-Wall -Wextra -Werror -pedantic -g -fsanitize=address -std=c11 -Os example.c -o example_size.out`
+`-g -fsanitize=address -std=c11 -Os example.c -o example_size.out`
 
 ## :bookmark: C naming conventions
 

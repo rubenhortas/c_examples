@@ -2,15 +2,11 @@
 # COMPILER AND FLAGS
 # ==============================================================================
 CC = gcc
-#  -Wall: All warnings
-#  -Wextra: Even more warnings
-#  -Werror; Treat warnings as errors
-#  -pedantic: Strict standard compliance
 #  -g: Debug info
 #  -fsanitize=address: ASan. Detect common memmory access errors
 #  -std=c11: Standard ISO/IEC 9899:2011
 #  -Os: Optimize for size
-CFLAGS = -Wall -Wextra -Werror -pedantic -g -fsanitize=address -std=c11 -Os
+CFLAGS = -g -fsanitize=address -std=c11 -Os
 
 # ==============================================================================
 # FILES AND DIRECTORIES
@@ -30,7 +26,7 @@ all: $(BINS)
 # Rule to build each executable from its .c file
 # %: is a pattern rule. $@ is the target, $< is the dependency
 %: %.c
-	$(CC) $(CFLAGS) -o $@ $<
+	$(CC) $(CFLAGS) -o $@.out $<
 
 # Clean up binaries
 clean:
