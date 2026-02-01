@@ -9,9 +9,9 @@ A collection of of standard C examples.
 
 ## :exclamation: Recommendations
 
-To compile any of these examples, I recommend using the flags `-std=c11` and `-Os`:
+To compile any of these examples, I recommend using the following flags:
 
-```gcc -std=c11 -Os example.c -o example_size.out```
+```-Wall -Wextra -Werror -pedantic -g -fsanitize=address -std=c11 -Os example.c -o example_size.out```
 
 ## :bookmark: C naming conventions
 
@@ -56,6 +56,10 @@ To compile any of these examples, I recommend using the flags `-std=c11` and `-O
 ```
 
 ## :construction: Compile flags
+
+| ISO      | Flags                             |
+|----------|-----------------------------------|
+| -std=c11 | Standard ISO/IEC 9899:2011 (2011) |
 
 | Environment | Flags                                                                                       | 
 |-------------|---------------------------------------------------------------------------------------------|
