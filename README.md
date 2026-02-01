@@ -9,7 +9,7 @@ A collection of of standard C examples.
 
 ## :exclamation: Recommendations
 
-To compile any of these examples, I recommend using the `Makefile`:
+To compile all these examples, I recommend using the `Makefile`:
 
 `$ make`
 
