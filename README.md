@@ -13,7 +13,7 @@ To compile all these examples, I recommend using the `Makefile`:
 
 `$ make`
 
-If you want to comiple a single file, I recommend the following flags:
+If you want to compile a single file, I recommend you the following flags:
 
 `$ gcc -g -fsanitize=address -std=c11 -Os example.c -o example_size.out`
 
