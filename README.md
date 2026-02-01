@@ -9,9 +9,13 @@ A collection of of standard C examples.
 
 ## :exclamation: Recommendations
 
-To compile any of these examples, I recommend using the following flags:
+To compile any of these examples, I recommend using the `Makefile`:
 
-```-Wall -Wextra -Werror -pedantic -g -fsanitize=address -std=c11 -Os example.c -o example_size.out```
+`make`
+
+If you want to comiple a single file, I recommend the following flags:
+
+`-Wall -Wextra -Werror -pedantic -g -fsanitize=address -std=c11 -Os example.c -o example_size.out`
 
 ## :bookmark: C naming conventions
 
