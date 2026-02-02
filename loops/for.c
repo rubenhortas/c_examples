@@ -2,16 +2,10 @@
 
 int main() {
     for(int i=0; i<5; i++) {
-        printf("%d\n",i);
+        printf("%d,",i);
     }
-    /**
-     * return:
-     * 0
-     * 1
-     * 2
-     * 3
-     * 4
-    */
+    // return: 0,1,2,3,4,
 
+    printf("\n");
     return 0;
 }
