@@ -7,9 +7,9 @@ int main() {
         printf("%d,", i);
         i++;
     } while(i < 5);
+    // return: 0,1,2,3,4,
 
     printf("\n");
-    // return: 0,1,2,3,4,
 
     return 0;
 }
