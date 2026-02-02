@@ -56,7 +56,7 @@ int main() {
      * 3D array
      * array[x][rows][cols];
     */
-    int arr[2][3][2] = {
+    int array_3d[2][3][2] = {
         {
             { 111, 112 },
             { 121, 122 },
@@ -74,7 +74,7 @@ int main() {
     for(int i = 0; i < 2; i++) {
         for(int j = 0; j < 3; j++) {
             for(int k = 0; k < 2; k++) {
-                printf("%d ", arr[i][j][k]);
+                printf("%d ", array_3d[i][j][k]);
             }
             printf("\n");
         }
