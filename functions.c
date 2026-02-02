@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*
+/**
  * Function prototypes
  *
  * A function prototype is a statement that tells the compiler about the function’s name,
