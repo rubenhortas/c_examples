@@ -24,7 +24,7 @@ If you want to compile a single file, I recommend you the following flags:
 | Constant                   | SCREAMING_SNAKE_CASE        | MY_CONSTANT   |                                                                                                                      |
 | Function                   | snake_case                  | my_function() | snake_case is the most traditional C style, but lowerCamelCase is also accepted.                                     |
 | Macro                      | SCREAMING_SNAKE_CASE        | MY_MACRO      |                                                                                                                      |
-| Struct                     | PascalCase (UpperCamelCase) | MyStruct      | Prefix with "S_" is also accepted.                                                                                   |
+| Struct                     | PascalCase (UpperCamelCase) | MyStruct      | Prefix with "S_" and snake_case with "_t" suffix are also accepted.                                                  |
 | Type Definitions (typedef) | snake_case                  | my_typedef    | PascalCase is also accepted.                                                                                         |
 | Union | PascalCase         | PascalCase (UpperCamelCase) | MyUnion       | Use PascalCase for the tag name, and then use a typedef with a clear suffix like "_t" for the type definition itself.|
 | Variables                  | snake_case                  | my_variable   | snake_case is the most traditional C style, but lowerCamelCase is also accepted.                                     |
