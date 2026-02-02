@@ -26,7 +26,72 @@ int main() {
     }
     // return: Chosen numbers: ....
 
+    printf("\n\n");
+
+    // 2D array (2x2)
+    int array_2d[2][2] = {
+        {11, 12},
+        {21, 22}
+    };
+
+    printf("2D array:\n");
+
+    for(int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", array_2d[i][j]);
+        }
+
+        printf("\n");
+    }
+    /**
+     * return:
+     * 2D array:
+     * 11 12
+     * 21 22
+    */
+
     printf("\n");
+
+    /**
+     * 3D array
+     * array[x][rows][cols];
+    */
+    int arr[2][3][2] = {
+        {
+            { 111, 112 },
+            { 121, 122 },
+            { 131, 132 }
+        },
+        {
+            { 211, 212 },
+            { 221, 222 },
+            { 231, 232 }
+        }
+    };
+
+    printf("3D array:\n");
+
+    for(int i = 0; i < 2; i++) {
+        for(int j = 0; j < 3; j++) {
+            for(int k = 0; k < 2; k++) {
+                printf("%d ", arr[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    /**
+     * return:
+     * 3D array:
+     * 111 112
+     * 121 122
+     * 131 132
+     *
+     * 211 212
+     * 221 222
+     * 231 232
+    */
+
     return 0;
 }
 
