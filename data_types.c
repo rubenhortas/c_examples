@@ -2,12 +2,17 @@
 #include <stdbool.h>
 
 int main() {
+    const int five = 5; // A constant never changes its value
+
     int i = 40;
     double d = 3.6;
     float f = 1.3;
     char c = 'A';
     bool is_true = true;
     bool is_false = false;
+
+    printf("five will always be %d\n", five);
+    // return: five will always be 5
 
     printf("int: '%d'\n", i);
     // return: int: '40'
