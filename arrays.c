@@ -10,14 +10,14 @@ int main() {
 
     printf("First number: '%d'\n",
            lotto_numbers[0]); // Arrays are initialized to 0
-    // return: First number: '4'
+    // output: First number: '4'
 
     printf("Last number: '%d'\n", lotto_numbers[5]);
-    // return: Last number: '41'
+    // output: Last number: '41'
 
     lotto_numbers[5] = 42;
     printf("Last number (fixed): '%d'\n", lotto_numbers[5]);
-    // return: Last number (fixed): '42'
+    // output: Last number (fixed): '42'
 
     // Assign values to the array
     for (int i = 0; i < 5; i++) {
@@ -29,7 +29,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("%d,", chosen_numbers[i]);
     }
-    // return: Chosen numbers: ....
+    // output: Chosen numbers: ....
 
     printf("\n\n");
 
@@ -50,7 +50,7 @@ int main() {
         printf("\n");
     }
     /**
-     * return:
+     * output:
      * 2D array:
      * 11 12
      * 21 22
@@ -78,7 +78,7 @@ int main() {
         printf("\n");
     }
     /**
-     * return:
+     * output:
      * 3D array:
      * 111 112
      * 121 122

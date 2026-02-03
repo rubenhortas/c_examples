@@ -15,15 +15,15 @@ int main() {
     int max_volume = 0;
 
     print_volume(volume);
-    // return: Volume is at 8
+    // output: Volume is at 8
 
     max_volume = get_max_volume();
     printf("Max volume is %d\n", max_volume);
-    // return: Max volume is 11
+    // output: Max volume is 11
 
     set_volume(&volume, 11);
     print_volume(volume);
-    // return: Volume is at 11
+    // output: Volume is at 11
 
     return 0;
 }

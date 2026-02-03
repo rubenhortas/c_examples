@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    for(int i=0; i<5; i++) {
-        printf("%d,",i);
+    for (int i = 0; i < 5; i++) {
+        printf("%d,", i);
     }
-    // return: 0,1,2,3,4,
+    // output: 0,1,2,3,4,
 
     printf("\n");
     return 0;

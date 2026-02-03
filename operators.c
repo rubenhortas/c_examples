@@ -17,10 +17,10 @@ int main() {
 
     printf("Arithmetic Operators\n");
     printf("%d + %d = %d\n", a, b, sum);
-    // return: 15 + 4 = 19
+    // output: 15 + 4 = 19
 
     printf("%d %% %d = %d (Remainder)\n\n", a, b, remainder);
-    // return: 15 % 4 = 3 (Remainder)
+    // output: 15 % 4 = 3 (Remainder)
 
     /***********************
      * Relational operators
@@ -28,16 +28,16 @@ int main() {
 
     printf("Relational Operators\n");
     printf("%d == %d is %d\n", a, b, a == b); // Equal to
-    // return: 15 == 4 is 0
+    // output: 15 == 4 is 0
 
     printf("%d != %d is %d\n", a, b, a != b); // Not equal to
-    // return:15 != 4 is 1
+    // output:15 != 4 is 1
 
     printf("%d >  %d is %d\n", a, b, a > b); // Greater than
-    // return: 15 >  4 is 1
+    // output: 15 >  4 is 1
 
     printf("%d <= %d is %d\n\n", a, b, a <= b); // Less than or equal to
-    // return: 15 <= 4 is 0
+    // output: 15 <= 4 is 0
 
     /********************
      * Logical operators
@@ -48,13 +48,13 @@ int main() {
 
     printf("Logical operators\n");
     printf("Sunny AND Warm: %d\n", is_sunny && is_warm);
-    // return: Sunny AND Warm: 0
+    // output: Sunny AND Warm: 0
 
     printf("Sunny OR Warm:  %d\n", is_sunny || is_warm);
-    // return: Sunny OR Warm:  1
+    // output: Sunny OR Warm:  1
 
     printf("NOT Sunny:      %d\n", !is_sunny);
-    // return: NOT Sunny:      0
+    // output: NOT Sunny:      0
 
     return 0;
 }

@@ -30,7 +30,7 @@ int main() {
     printf("Year:  %d\n", myCar.year);
     printf("Price: $%.2f\n", myCar.price);
     /**
-     * return:
+     * output:
      * Car Details:
      * Brand: Suzuki
      * Model: Swift
