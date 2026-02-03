@@ -2,7 +2,10 @@
 #include <stdbool.h>
 
 int main() {
-    // Arithmetic operators
+    /***********************
+     * Arithmetic operators
+     ***********************/
+
     int a = 15;
     int b = 4;
 
@@ -19,7 +22,10 @@ int main() {
     printf("%d %% %d = %d (Remainder)\n\n", a, b, remainder);
     // return: 15 % 4 = 3 (Remainder)
 
-    // Relational operators
+    /***********************
+     * Relational operators
+     ***********************/
+
     printf("Relational Operators\n");
     printf("%d == %d is %d\n", a, b, a == b);  // Equal to
     // return: 15 == 4 is 0
@@ -33,7 +39,10 @@ int main() {
     printf("%d <= %d is %d\n\n", a, b, a <= b); // Less than or equal to
     // return: 15 <= 4 is 0
 
-    // Logical operators
+    /********************
+     * Logical operators
+     ********************/
+
     bool is_sunny = true;  // true = 1
     bool is_warm  = false; // false = 0
 
