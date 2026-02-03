@@ -1,10 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * Function prototypes
  *
- * A function prototype is a statement that tells the compiler about the function’s name,
- * its return type, numbers, and data types of its parameters.
+ * A function prototype is a statement that tells the compiler about the
+ * function’s name, its return type, numbers, and data types of its parameters.
  */
 void print_volume(int value);
 int get_max_volume();
@@ -29,16 +29,10 @@ int main() {
 }
 
 // void function does not return nothing
-void print_volume(int value) {
-    printf("Volume is at %d\n", value);
-}
+void print_volume(int value) { printf("Volume is at %d\n", value); }
 
 // Return a value
-int get_max_volume(){
-    return 11;
-}
+int get_max_volume() { return 11; }
 
 // Modify a value
-void set_volume(int *volume, int value) {
-    *volume = value;
-}
+void set_volume(int *volume, int value) { *volume = value; }

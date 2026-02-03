@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 int main() {
     /***********************
@@ -9,11 +9,11 @@ int main() {
     int a = 15;
     int b = 4;
 
-    int sum        = a + b;  // Addition
-    int difference = a - b;  // Subtraction
-    int product    = a * b;  // Multiplication
-    int quotient   = a / b;  // Division (Integer)
-    int remainder  = a % b;  // Modulo
+    int sum = a + b;        // Addition
+    int difference = a - b; // Subtraction
+    int product = a * b;    // Multiplication
+    int quotient = a / b;   // Division (Integer)
+    int remainder = a % b;  // Modulo
 
     printf("Arithmetic Operators\n");
     printf("%d + %d = %d\n", a, b, sum);
@@ -27,13 +27,13 @@ int main() {
      ***********************/
 
     printf("Relational Operators\n");
-    printf("%d == %d is %d\n", a, b, a == b);  // Equal to
+    printf("%d == %d is %d\n", a, b, a == b); // Equal to
     // return: 15 == 4 is 0
 
-    printf("%d != %d is %d\n", a, b, a != b);  // Not equal to
+    printf("%d != %d is %d\n", a, b, a != b); // Not equal to
     // return:15 != 4 is 1
 
-    printf("%d >  %d is %d\n", a, b, a > b);   // Greater than
+    printf("%d >  %d is %d\n", a, b, a > b); // Greater than
     // return: 15 >  4 is 1
 
     printf("%d <= %d is %d\n\n", a, b, a <= b); // Less than or equal to
@@ -43,8 +43,8 @@ int main() {
      * Logical operators
      ********************/
 
-    bool is_sunny = true;  // true = 1
-    bool is_warm  = false; // false = 0
+    bool is_sunny = true; // true = 1
+    bool is_warm = false; // false = 0
 
     printf("Logical operators\n");
     printf("Sunny AND Warm: %d\n", is_sunny && is_warm);

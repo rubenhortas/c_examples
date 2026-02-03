@@ -2,9 +2,10 @@
 #include <string.h>
 
 /**
- * A struct is a custom data type that groups related variables of different types.
- * It allows you to treat a collection of data as a single unit or object.
-*/
+ * A struct is a custom data type that groups related variables of different
+ * types. It allows you to treat a collection of data as a single unit or
+ * object.
+ */
 struct Car {
     char brand[20];
     char model[20];
@@ -35,7 +36,7 @@ int main() {
      * Model: Swift
      * Year:  2018
      * Price: $25000.50
-    */
+     */
 
     return 0;
 }
