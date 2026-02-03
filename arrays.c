@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 int main() {
+    /************
+     * 1D array
+     ***********/
+
     int lotto_numbers[] = { 4, 8, 15, 16, 23, 41 }; // Array with known values
     int chosen_numbers[5]; // Array with unknown values
 
@@ -28,7 +32,9 @@ int main() {
 
     printf("\n\n");
 
-    /************************************* 2D array *************************************\
+    /************
+     * 2D array
+     ***********/
 
     // array[rows][cols]
     int array_2d[2][2] = {
@@ -54,7 +60,9 @@ int main() {
 
     printf("\n");
 
-    /************************************* 3D array *************************************\
+    /************
+     * 3D array
+     ***********/
 
     // array[x][rows][cols];
     int array_3d[2][3][2] = {
