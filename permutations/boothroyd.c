@@ -1,4 +1,6 @@
-/* Example from  http://rosettacode.org/wiki/Permutations#C */
+/**
+ * Example from  http://rosettacode.org/wiki/Permutations#callback
+ */
 
 #include <stdio.h>
 
