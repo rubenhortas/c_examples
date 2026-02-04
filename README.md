@@ -1,6 +1,6 @@
 # C examples
 
-A collection of of C Standard examples.
+A collection of of Standard C examples.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rubenhortas/c_examples)
 ![GitHub repo size](https://img.shields.io/github/repo-size/rubenhortas/c_examples)
