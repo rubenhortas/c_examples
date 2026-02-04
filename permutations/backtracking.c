@@ -16,11 +16,13 @@ void swap(char *x, char *y) {
     *y = temp;
 }
 
-/* Print permutations of a string
-   Parameters:
-    1. String
-    2. Starting index of the string
-    3. Ending index of the string. */
+/**
+ * Print permutations of a stringParameters
+ *
+ * @a String
+ * @l Left. Starting index of the string
+ * @r Right. Ending index of the string.
+ */
 void permute(char *a, int l, int r) {
     int i;
     if (l == r)
@@ -34,7 +36,6 @@ void permute(char *a, int l, int r) {
     }
 }
 
-// Driver program to test above functions.
 int main() {
     char str[] = "ABC";
     int n = strlen(str);
