@@ -4,15 +4,16 @@
 #include <stdio.h>
 
 int main() {
-    /************
+    /***************************************************************************
      * Constants
      * A constant value remains immutable throughout the program execution.
-     ***********/
+     **************************************************************************/
+
     const int five = 5;
 
-    /*************
+    /***************************************************************************
      * Data types
-     ************/
+     **************************************************************************/
 
     short sh = SHRT_MAX;
     unsigned short ush = USHRT_MAX;
@@ -30,9 +31,9 @@ int main() {
     bool bt = true;
     bool bf = false;
 
-    /********************
+    /***************************************************************************
      * Format specifiers
-     *******************/
+     **************************************************************************/
 
     printf("my constant will always be %d\n", five);
     // output: my constant will always be 5
@@ -113,9 +114,9 @@ int main() {
     printf("bool false %%d: '%d'\n", bf);
     // output: bool false %d: '0'
 
-    /*****************
-     * Int formatting
-     ****************/
+    /***************************************************************************
+     * int formatting
+     **************************************************************************/
 
     printf("unsigned octal %%o: '%o'\n", i);
     // output: unsigned octal %o: '17777777777'
@@ -126,9 +127,9 @@ int main() {
     printf("unsigned hexadecimal %%X: '%X'\n", i); // Uppercase.
     // output: unsigned hexadecimal %X: '7FFFFFFF'
 
-    /*******************
-     * Float formatting
-     ******************/
+    /***************************************************************************
+     * float formatting
+     **************************************************************************/
 
     // %[flags][width][.precision]specifier
     // Width: Minimum number of characters to be printed.
@@ -146,9 +147,9 @@ int main() {
     printf("float %%-10.3f: '%-10.3f'\n", 3.1416);
     // output: float %-10.3f: '3.142     '
 
-    /********************
-     * String formatting
-     *******************/
+    /***************************************************************************
+     * string formatting
+     **************************************************************************/
 
     // A number after '%' specifies the minimum field width to be printed.
     printf("'%30s'\n", s);
@@ -165,9 +166,9 @@ int main() {
     printf("'%-30.5s'\n", s);
     // output: 'Hello                         '
 
-    /**************************
+    /***************************************************************************
      * Address format specifier
-     **************************/
+     **************************************************************************/
 
     printf("memory addres of 'i' %%p: '%p'\n", &i);
     // output: memory addres of 'i' %p: '0x7ffc2857b4d4'
