@@ -1,4 +1,4 @@
-/*
+/**
  * Print all permutations with duplicates allowed
  *
  * Example extracted from:
