@@ -17,8 +17,9 @@ void swap(char *x, char *y) {
 }
 
 /**
- * Print permutations of a stringParameters
+ * Print permutations of a string
  *
+ * Parameters
  * @a String
  * @l Left. Starting index of the string
  * @r Right. Ending index of the string.
