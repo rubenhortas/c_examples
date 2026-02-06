@@ -17,11 +17,13 @@ int do_something(int v);
 
 int main() {
     int var = 10;
-    int *ptr = &var;  // Pointer to an integer
-    int *nptr = NULL; // null pointer. It does not point to any memory location.
-    void *vptr; // void pointer. It can point to any type and can be casted
-                // to any type.
-    int *wptr;  // wild pointer. It has not been initialized with something yet
+
+    int *ptr = &var;   // Pointer to an integer
+    int *nptr = NULL;  // NULL pointer: Points to nothing (safe to check)
+    void *vptr = NULL; // Void pointer
+                       // Generic type, must be cast before dereferencing
+    int *wptr = NULL;  // It contains a garbage value and points to an arbitrary
+                       // memory location.
 
     printf("var address: '%p'\n", ptr);
     // output: var address: '0x7ffc53a53954'
@@ -36,30 +38,31 @@ int main() {
     /***************************************************************************
      * Dangling pointers
      *
-     * A daingling pointer points to a memory address that has ben released.
+     * A dangling pointer points to a memory address that has been deallocated.
      **************************************************************************/
 
-    int *dptr = (int *)malloc(sizeof(int));
+    int *dptr = malloc(sizeof(int));
 
-    free(dptr); // Memory release
+    free(dptr); // Memory is released
     // dptr is now a dangling pointer
 
-    dptr = NULL; // Removing dangling pointer
+    dptr = NULL; // Reset to NULL to avoid dangling access
 
     /***************************************************************************
      * Function pointers
      *
-     * Pointers that stores the address of a function, allowing functions to be
-     * passed as arguments and invoked dynamically.
+     * Variables that store the address of a function, allowing for dynamic
+     * function calls and callbacks.
      **************************************************************************/
 
-    int (*fptr)(int) = &do_something;
+    // & is optional when assigning functions to pointers
+    int (*fptr)(int) = do_something;
 
     printf("do_something result: '%d'\n", fptr(100));
     // output: do_something result: '0'
 
     /***************************************************************************
-     * Multilevel pointers
+     * Multilevel pointers (Pointer to pointers)
      **************************************************************************/
 
     int *mlp1 = &var;
@@ -77,4 +80,7 @@ int main() {
     return 0;
 }
 
-int do_something(int v) { return 0; }
+int do_something(int v) {
+    (void)v; // Avoid "unused parameter" warning
+    return 0;
+}
