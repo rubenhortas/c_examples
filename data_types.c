@@ -6,6 +6,7 @@
 int main() {
     /***************************************************************************
      * Constants
+     *
      * A constant value remains immutable throughout the program execution.
      **************************************************************************/
 
