@@ -170,8 +170,20 @@ int main() {
      * Address format specifier
      **************************************************************************/
 
-    printf("memory addres of 'i' %%p: '%p'\n", &i);
+    int *p = &i;
+    printf("memory addres of 'i' %%p: '%p'\n", p);
     // output: memory addres of 'i' %p: '0x7ffc2857b4d4'
+
+    /***************************************************************************
+     * size_t format specifier
+     *
+     * 'z': It indicates that the argument has the size of a size_t
+     * 'u': It indicates that the value should be treated as an unsigned
+     *      integer.
+     **************************************************************************/
+
+    printf("size of '*p' %%zu: '%zu' bytes\n", sizeof(p));
+    // output: size of '*p' %zu: '8' bytes
 
     return 0;
 }
