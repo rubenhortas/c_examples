@@ -1,7 +1,18 @@
 ---
+# Apply to project: Place in the project root directory
+# Apply globally:   Place in ~/
 Language: Cpp
-BasedOnStyle: LLVM
+BasedOnStyle: Google
+ColumnLimit: 120
 IndentWidth: 4
 TabWidth: 4
-UseTab: Never
+PointerAlignment: Right
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: None
+SpaceBeforeParens: Never
+Standard: Cpp11
+SortIncludes: true
+SpaceAfterCStyleCast: false
+SpacesInParentheses: false
 ---
