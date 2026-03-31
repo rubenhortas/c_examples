@@ -12,25 +12,31 @@ int main() {
 
     const int five = 5;
 
-    /***************************************************************************
+    /**************************************************************************
      * Data types
      **************************************************************************/
 
-    short sh = SHRT_MAX;
-    unsigned short ush = USHRT_MAX;
-    int i = INT_MAX;
-    unsigned int ui = UINT_MAX;
-    long l = LONG_MAX;
-    unsigned long ul = ULONG_MAX;
-    long long ll = LLONG_MAX;
-    unsigned long long ull = ULLONG_MAX;
-    float f = FLT_MAX;  // 4 bytes
-    double d = DBL_MAX; // 8 bytes
-    long double ld = LDBL_MAX;
-    char c = 'A';
-    char s[] = "Hello, world!";
-    bool bt = true;
-    bool bf = false;
+    short sh = SHRT_MAX;             // 2 bytes, Range: -32,768 to 32,767
+    unsigned short ush = USHRT_MAX;  // 2 bytes, Range: 0 to 65,535
+
+    int i = INT_MAX;             // 4 bytes, Range: -2,147,483,648 to 2,147,483,647
+    unsigned int ui = UINT_MAX;  // 4 bytes, Range: 0 to 4,294,967,295
+
+    long l = LONG_MAX;                    // 8 bytes, Range: -9.22e18 to 9.22e18
+    unsigned long ul = ULONG_MAX;         // 8 bytes, Range: 0 to 1.84e19
+    long long ll = LLONG_MAX;             // 8 bytes, Range: -9.22e18 to 9.22e18
+    unsigned long long ull = ULLONG_MAX;  // 8 bytes, Range: 0 to 1.84e19
+
+    float f = FLT_MAX;  // 4 bytes, Range: 1.2e-38 to 3.4e38
+
+    double d = DBL_MAX;         // 8 bytes, Range: 2.3e-308 to 1.7e308
+    long double ld = LDBL_MAX;  // 16 bytes, Range: 3.4e-4932 to 1.1e4932
+
+    char c = 'A';                // 1 byte, Range: -128 to 127 (or 0 to 255)
+    char s[] = "Hello, world!";  // 1 byte per element (plus null terminator)
+
+    bool bt = true;   // 1 byte, Range: true (1) or false (0)
+    bool bf = false;  // 1 byte, Range: true (1) or false (0)
 
     /***************************************************************************
      * Format specifiers
@@ -81,10 +87,10 @@ int main() {
     printf("float %%f: '%f'\n", f);
     // output: float %f: '340282346638528859811704183484516925440.000000'
 
-    printf("float %%e: '%e'\n", f); // Lowercase exponential form.
+    printf("float %%e: '%e'\n", f);  // Lowercase exponential form.
     // output: float %e: '3.402823e+38'
 
-    printf("float %%E: '%E'\n", f); // Uppercase exponential form.
+    printf("float %%E: '%E'\n", f);  // Uppercase exponential form.
     // output: float %E: '3.402823E+38'
 
     printf("float %%g: '%g'\n", f);
@@ -122,10 +128,10 @@ int main() {
     printf("unsigned octal %%o: '%o'\n", i);
     // output: unsigned octal %o: '17777777777'
 
-    printf("unsigned hexadecimal %%x: '%x'\n", i); // Lowercase.
+    printf("unsigned hexadecimal %%x: '%x'\n", i);  // Lowercase.
     // output: unsigned hexadecimal %x: '7fffffff'
 
-    printf("unsigned hexadecimal %%X: '%X'\n", i); // Uppercase.
+    printf("unsigned hexadecimal %%X: '%X'\n", i);  // Uppercase.
     // output: unsigned hexadecimal %X: '7FFFFFFF'
 
     /***************************************************************************
