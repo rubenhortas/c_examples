@@ -18,9 +18,9 @@ int main() {
     return (0);
 }
 
-// return (debug):
+// output (debug):
 // > Debugging...
 // Doing something important...
 //
-// return (release):
+// output (release):
 // Doing something important...
