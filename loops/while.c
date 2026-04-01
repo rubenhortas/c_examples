@@ -7,9 +7,10 @@ int main() {
         printf("%d,", i);
         i++;
     }
-    // output: 0,1,2,3,4,
 
     printf("\n");
 
     return 0;
 }
+
+// output: 0,1,2,3,4,
