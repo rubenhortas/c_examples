@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <string.h>
-
 /**
  * A struct is a custom data type that groups related variables of different
  * types. It allows you to treat a collection of data as a single unit or object.
  */
+#include <stdio.h>
+#include <string.h>
+
 struct Car {
     char brand[20];
     char model[20];
@@ -28,14 +28,13 @@ int main() {
     printf("Model: %s\n", myCar.model);
     printf("Year:  %d\n", myCar.year);
     printf("Price: $%.2f\n", myCar.price);
-    /**
-     * output:
-     * Car Details:
-     * Brand: Suzuki
-     * Model: Swift
-     * Year:  2018
-     * Price: $25000.50
-     */
+
+    // output:
+    // Car Details:
+    // Brand: Suzuki
+    // Model: Swift
+    // Year:  2018
+    // Price: $25000.50
 
     return 0;
 }
