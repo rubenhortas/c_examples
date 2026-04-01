@@ -24,4 +24,4 @@ int main() {
 //
 // output (error):
 // test: testing.c:15: main: Assertion `sum(-1, 1) == 8' failed.
-// Abortado
+// Aborted
