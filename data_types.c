@@ -192,5 +192,15 @@ int main() {
     printf("size of '*p' %%zu: '%zu' bytes\n", sizeof(p));
     // output: size of '*p' %zu: '8' bytes
 
+    /***************************************************************************
+     * Binary format
+     *
+     * gcc adds support for %b and %B format specifiers to print integers in binary
+     **************************************************************************/
+
+    int a = 1;
+    printf("%d in binary is %04b\n", a, a);
+    // output: 1 in binary is 0001
+
     return 0;
 }
