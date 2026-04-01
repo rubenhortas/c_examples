@@ -1,3 +1,4 @@
+#include <math.h>  // All math.h library functions accept double type as an argument and return double as a result
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -9,11 +10,11 @@ int main() {
     int a = 15;
     int b = 4;
 
-    int sum = a + b;        // Addition
-    int difference = a - b; // Subtraction
-    int product = a * b;    // Multiplication
-    int quotient = a / b;   // Division (Integer)
-    int remainder = a % b;  // Modulo
+    int sum = a + b;         // Addition
+    int difference = a - b;  // Subtraction
+    int product = a * b;     // Multiplication
+    int quotient = a / b;    // Division (Integer)
+    int remainder = a % b;   // Module
 
     printf("Arithmetic Operators\n");
     printf("%d + %d = %d\n", a, b, sum);
@@ -23,28 +24,37 @@ int main() {
     // output: 15 % 4 = 3 (Remainder)
 
     /***************************************************************************
+     * Powers
+     *
+     * In C, there is no operator that allows us to calculate powers (raising a number to another).
+     * In C, to raise a number to another, we have to use the "pow" function defined in the <math.h> header file.
+     **************************************************************************/
+    printf("2^3 = %f\n", pow(2, 3));
+    // output: 2^3 = 8.000000
+
+    /***************************************************************************
      * Relational operators
      **************************************************************************/
 
     printf("Relational Operators\n");
-    printf("%d == %d is %d\n", a, b, a == b); // Equal to
+    printf("%d == %d is %d\n", a, b, a == b);  // Equal to
     // output: 15 == 4 is 0
 
-    printf("%d != %d is %d\n", a, b, a != b); // Not equal to
+    printf("%d != %d is %d\n", a, b, a != b);  // Not equal to
     // output:15 != 4 is 1
 
-    printf("%d >  %d is %d\n", a, b, a > b); // Greater than
+    printf("%d >  %d is %d\n", a, b, a > b);  // Greater than
     // output: 15 >  4 is 1
 
-    printf("%d <= %d is %d\n\n", a, b, a <= b); // Less than or equal to
+    printf("%d <= %d is %d\n\n", a, b, a <= b);  // Less than or equal to
     // output: 15 <= 4 is 0
 
     /***************************************************************************
      * Logical operators
      **************************************************************************/
 
-    bool is_sunny = true; // true = 1
-    bool is_warm = false; // false = 0
+    bool is_sunny = true;  // true = 1
+    bool is_warm = false;  // false = 0
 
     printf("Logical operators\n");
     printf("Sunny AND Warm: %d\n", is_sunny && is_warm);
