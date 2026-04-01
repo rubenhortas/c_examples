@@ -102,4 +102,4 @@ If you want to compile a single file, I recommend you the following flags:
 
 ## :star: Support
 
-If you find these examples useful, please, consider starring crepository!
+If you find these examples useful, please, consider starring this repository!
