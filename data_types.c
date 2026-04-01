@@ -74,12 +74,12 @@ int main() {
     // output: unsigned long %li: '18446744073709551615'
 
     printf("long long %%lld: '%lld'\n", ll);
-    // output:
+    // output: long long %lld: '9223372036854775807'
 
     // %i can interpret numbers in octal or hexadecimal if they start with 0 or
     // 0x, but in printf, the result of %lli and %lld is the same.
     printf("long long %%lli: '%lli'\n", ll);
-    // output:
+    // output: long long %lli: '9223372036854775807'
 
     printf("unsigned long long %%llu: '%llu'\n", ull);
     // output: unsigned long long %llu: '18446744073709551615'
@@ -140,8 +140,7 @@ int main() {
 
     // %[flags][width][.precision]specifier
     // Width: Minimum number of characters to be printed.
-    // Precision: For %f, it specifies the number of digits after the decimal
-    // point.
+    // Precision: For %f, it specifies the number of digits after the decimal point.
     printf("float %%.2f: '%.2f'\n", 3.1416);
     // output: float %.2f: '3.14'
 
@@ -149,8 +148,7 @@ int main() {
     // output: float %6.3f: ' 3.142'
 
     // The '-' flag forces left-alignment within the specified width.
-    // Width (10) reserves space, .3 rounds, and '-' pushes the text to the
-    // left.
+    // Width (10) reserves space, .3 rounds, and '-' pushes the text to the left.
     printf("float %%-10.3f: '%-10.3f'\n", 3.1416);
     // output: float %-10.3f: '3.142     '
 
@@ -185,8 +183,7 @@ int main() {
      * size_t format specifier
      *
      * 'z': It indicates that the argument has the size of a size_t
-     * 'u': It indicates that the value should be treated as an unsigned
-     *      integer.
+     * 'u': It indicates that the value should be treated as an unsigned integer.
      **************************************************************************/
 
     printf("size of '*p' %%zu: '%zu' bytes\n", sizeof(p));
