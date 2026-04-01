@@ -6,6 +6,7 @@
  * Compile with debug: $ gcc -DDEBUG debug.c -o debug.out
  * Compile to release: $ gcc debug.c -o debug.out (DEBUG is omitted)
  */
+
 #include <stdio.h>
 
 int main() {
