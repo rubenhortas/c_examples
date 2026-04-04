@@ -17,10 +17,10 @@ int main() {
     int remainder = a % b;   // Modulo (Remainder)
 
     printf("Arithmetic Operators\n");
-    printf("%d + %d = %d\n", a, b, sum);
+    printf("\t%d + %d = %d\n", a, b, sum);
     // output: 15 + 4 = 19
 
-    printf("%d %% %d = %d (Remainder)\n\n", a, b, remainder);
+    printf("\t%d %% %d = %d (Remainder)\n\n", a, b, remainder);
     // output: 15 % 4 = 3 (Remainder)
 
     /***************************************************************************
@@ -31,7 +31,7 @@ int main() {
      **************************************************************************/
 
     printf("Powers\n");
-    printf("2^3 = %f\n\n", pow(2, 3));
+    printf("\t2^3 = %f\n\n", pow(2, 3));
     // output: 2^3 = 8.000000
 
     /***************************************************************************
@@ -41,20 +41,20 @@ int main() {
     int c = 10;
     printf("Increment and Decrement Operators\n");
 
-    printf("Post-increment (c++): %d\n", c++);
+    printf("\tPost-increment (c++): %d\n", c++);
     // output: Post-increment (c++): 10 (Returns value, then increments)
-    printf("c = %d\n", c);
+    printf("\tc = %d\n", c);
     // optput: c = 11 (c incremented)
 
-    printf("Post-decrement  (c--): %d\n", c--);
+    printf("\tPost-decrement  (c--): %d\n", c--);
     // ouput: Post-decrement (c--): 10 (Returns value, then decrements)
-    printf("c = %d\n", c);
+    printf("\tc = %d\n", c);
     // optput: c = 10 (c decremented)
 
-    printf("Pre-increment (++c): %d\n", ++c);
+    printf("\tPre-increment (++c): %d\n", ++c);
     // output: Pre-increment (++c): 11 (Increments, then returns value)
 
-    printf("Pre-decrement (--c): %d\n\n", --c);
+    printf("\tPre-decrement (--c): %d\n\n", --c);
     // output: Pre-decrement (--c): 10 (Decrements, then returns value)
 
     /***************************************************************************
@@ -65,16 +65,16 @@ int main() {
     bool is_warm = false;  // false = 0
 
     printf("Relational and Logical Operators\n");
-    printf("%d == %d is %d\n", a, b, a == b);  // Equal to
+    printf("\t%d == %d is %d\n", a, b, a == b);  // Equal to
     // output: 15 == 4 is 0
 
-    printf("%d != %d is %d\n", a, b, a != b);  // Not equal to
+    printf("\t%d != %d is %d\n", a, b, a != b);  // Not equal to
     // output: 15 != 4 is 1
 
-    printf("Sunny AND Warm: %d\n", is_sunny && is_warm);  // Logical AND
+    printf("\tSunny AND Warm: %d\n", is_sunny && is_warm);  // Logical AND
     // output: Sunny AND Warm: 0
 
-    printf("NOT Sunny:      %d\n\n", !is_sunny);  // Logical NOT
+    printf("\tNOT Sunny:      %d\n\n", !is_sunny);  // Logical NOT
     // output: NOT Sunny:      0
 
     /***************************************************************************
@@ -85,11 +85,11 @@ int main() {
     printf("Compound Assignment Operators\n");
 
     d += 5;  // Equivalent to: d = d + 5
-    printf("d += 5: %d\n", d);
+    printf("\td += 5: %d\n", d);
     // output: d += 5: 15
 
     d *= 2;  // Equivalent to: d = d * 2
-    printf("d *= 2: %d\n\n", d);
+    printf("\td *= 2: %d\n\n", d);
     // output: d *= 2: 30
 
     /***************************************************************************
@@ -98,7 +98,7 @@ int main() {
 
     int max = (a > b) ? a : b;
     printf("Conditional (Ternary) Operator\n");
-    printf("Max of %d and %d is %d\n\n", a, b, max);
+    printf("\tMax of %d and %d is %d\n\n", a, b, max);
     // output: Max of 15 and 4 is 15
 
     /***************************************************************************
@@ -109,10 +109,10 @@ int main() {
     int y = 3;  // Binary: 0011
 
     printf("Bitwise Operators\n");
-    printf("%d & %d = %d (AND)\n", x, y, x & y);     // output: 5 & 3 = 1
-    printf("%d | %d = %d (OR)\n", x, y, x | y);      // output: 5 | 3 = 7
-    printf("%d ^ %d = %d (XOR)\n", x, y, x ^ y);     // output: 5 ^ 3 = 6
-    printf("~%d = %d (NOT/Complement)\n\n", x, ~x);  // output: ~5 = -6
+    printf("\t%d & %d = %d (AND)\n", x, y, x & y);     // output: 5 & 3 = 1
+    printf("\t%d | %d = %d (OR)\n", x, y, x | y);      // output: 5 | 3 = 7
+    printf("\t%d ^ %d = %d (XOR)\n", x, y, x ^ y);     // output: 5 ^ 3 = 6
+    printf("\t~%d = %d (NOT/Complement)\n\n", x, ~x);  // output: ~5 = -6
 
     /***************************************************************************
      * Compound Bitwise Assignment Operators
@@ -122,22 +122,22 @@ int main() {
 
     int e = 1;
     printf("Compound Bitwise Assignment\n");
-    printf("e = %04b\n", e);  // output: e = 0001
+    printf("\te = %04b\n", e);  // output: e = 0001
 
     e <<= 2;  // Left shift
-    printf("Result of e after left shift: %04b\n", e);
+    printf("\tResult of e after left shift: %04b\n", e);
     // ouput: Result of e after left shift: 0100
 
     e >>= 2;  // Right shift
-    printf("Result of e after left shift: %04b\n", e);
+    printf("\tResult of e after left shift: %04b\n", e);
     // ouput: Result of e after left shift: 0001
 
     e |= 2;  // Bitwise OR
-    printf("Result of e after OR: %04b\n", e);
+    printf("\tResult of e after OR: %04b\n", e);
     // ouput: Result of e after OR: 0011
 
     e ^= 1;  // Bitwise XOR
-    printf("Result of e after XOR: %04b\n\n", e);
+    printf("\tResult of e after XOR: %04b\n\n", e);
     // output: Result of e after XOR:
 
     /***************************************************************************
@@ -145,10 +145,10 @@ int main() {
      **************************************************************************/
 
     printf("Sizeof Operator\n");
-    printf("Size of int: %zu bytes\n", sizeof(int));
+    printf("\tSize of int: %zu bytes\n", sizeof(int));
     // output: Size of int: 4 bytes (Size may vary by system)
 
-    printf("Size of double: %zu bytes\n\n", sizeof(double));
+    printf("\tSize of double: %zu bytes\n\n", sizeof(double));
     // output: Size of double: 8 bytes
 
     /***************************************************************************
