@@ -29,10 +29,19 @@ int main() {
 }
 
 // void function does not return nothing
-void print_volume(int value) { printf("Volume is at %d\n", value); }
+void print_volume(int value) {
+    printf("Volume is at %d\n", value);
+}
 
 // Return a value
-int get_max_volume() { return 11; }
+int get_max_volume() {
+    return 11;
+}
 
 // Modify a value
-void set_volume(int *volume, int value) { *volume = value; }
+// @volume ins passed by value      ->  Changes to the formal argument do not affect the actual argument
+// @value is passed by rereference  ->  The memory address of the actual argument is passed, allowing the function to
+//                                      modify the original variable’s value
+void set_volume(int *volume, int value) {
+    *volume = value;
+}
