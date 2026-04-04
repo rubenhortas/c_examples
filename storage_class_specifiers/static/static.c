@@ -1,5 +1,5 @@
 /**
- * 2. Static Declarations (static)
+ * static Declarations (static)
  *
  * The static keyword has two distinct meanings depending on where it is used:
  *
