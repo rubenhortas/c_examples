@@ -30,7 +30,8 @@ int main() {
      * In C, to raise a number to another, we have to use the "pow" function defined in the <math.h> header file.
      **************************************************************************/
 
-    printf("2^3 = %f\n", pow(2, 3));
+    printf("Powers\n");
+    printf("2^3 = %f\n\n", pow(2, 3));
     // output: 2^3 = 8.000000
 
     /***************************************************************************
@@ -42,6 +43,16 @@ int main() {
 
     printf("Post-increment (c++): %d\n", c++);
     // output: Post-increment (c++): 10 (Returns value, then increments)
+    printf("c = %d\n", c);
+    // optput: c = 11 (c incremented)
+
+    printf("Post-decrement  (c--): %d\n", c--);
+    // ouput: Post-decrement (c--): 10 (Returns value, then decrements)
+    printf("c = %d\n", c);
+    // optput: c = 10 (c decremented)
+
+    printf("Pre-increment (++c): %d\n", ++c);
+    // output: Pre-increment (++c): 11 (Increments, then returns value)
 
     printf("Pre-decrement (--c): %d\n\n", --c);
     // output: Pre-decrement (--c): 10 (Decrements, then returns value)
