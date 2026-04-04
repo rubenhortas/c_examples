@@ -13,7 +13,7 @@
  * 2. Static Inside a Function (Block Scope)
  *
  * When used inside a function, the variable is initialized only once and retains its value between function calls.
- * Itlives for the entire duration of the program.
+ * It lives for the entire duration of the program.
  *
  * Purpose: To maintain state without using a global variable.
  */
