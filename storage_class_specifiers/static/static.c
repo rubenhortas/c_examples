@@ -1,16 +1,16 @@
 /**
- * static Declarations (static)
+ * Static declarations (static)
  *
- * The static keyword has two distinct meanings depending on where it is used:
+ * The "static" keyword has two distinct meanings depending on where it is used:
  *
- * 1. Static at File Level (Internal Linkage)
+ * 1. Static at file level (Internal linkage)
  *
  * When used outside of a function, it limits the scope of the variable or function to that file only.
  * Other files cannot see it, even if they use extern.
  *
  * Purpose: Encapsulation and avoiding name conflicts between files.
  *
- * 2. Static Inside a Function (Block Scope)
+ * 2. Static inside a function (Block scope)
  *
  * When used inside a function, the variable is initialized only once and retains its value between function calls.
  * It lives for the entire duration of the program.
