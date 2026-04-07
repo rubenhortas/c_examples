@@ -45,10 +45,17 @@ int main() {
 
     // When we initialize an array of characters, we must reserve space for one more element,
     // for the null character '\0', which indicates the end of the string.
-    char chars[17] = "Programming in C";
-    arr_len = ARRAY_LEN(chars);
-    print_arr_char(chars, arr_len);
+    char str[17] = "Programming in C";
+    arr_len = ARRAY_LEN(str);
+    print_arr_char(str, arr_len);
     // output: Programming in C
+
+    // Character strings can also be initialized without delimiters,
+    // leaving it to the compiler to calculate the necessary space
+    char str2[] = "This is my second string!";
+    arr_len = ARRAY_LEN(str2);
+    print_arr_char(str2, arr_len);
+    // output: This is my second string!
 
     /***************************************************************************
      * 1D array
