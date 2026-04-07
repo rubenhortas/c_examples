@@ -1,12 +1,61 @@
 #include <stdio.h>
 
+#define ARRAY_LEN(a) (sizeof(a) / sizeof((a)[0]))
+
+// C does not allow passing an entire array as an argument,
+// it's necessary to pass a pointer to the array as an argument.
+// C makes this operation easier by making the invocation of an array name
+// generate a pointer to its first element.
+void print_arr_int(const int *arr, size_t n) {
+    for(size_t i = 0; i < n; i++) {
+        printf("%d", arr[i]);
+        if(i + 1 < n)
+            putchar(' ');  // Write a single character to stdout
+    }
+
+    putchar('\n');
+}
+
+void print_arr_char(const char *arr, size_t n) {
+    for(size_t i = 0; i < n; i++) {
+        printf("%c", arr[i]);
+    }
+
+    putchar('\n');
+}
+
 int main() {
+    size_t arr_len = 0;
+
+    /***************************************************************************
+     * Array initialization
+     **************************************************************************/
+
+    int values[3] = {1, 2, 3};
+    arr_len = ARRAY_LEN(values);
+    print_arr_int(values, arr_len);  // passing a pointer to the array: print_arr_int(&values[0], arr_len)
+    // output: 1 2 3
+
+    // When an array is initialized with fewer numbers that it can hold,
+    // most compilers will fill the remaining spaces with zeros.
+    int values2[10] = {1, 2, 3, 4, 5};
+    arr_len = ARRAY_LEN(values2);
+    print_arr_int(values2, arr_len);
+    // output: 1 2 3 4 5 0 0 0 0 0
+
+    // When we initialize an array of characters, we must reserve space for one more element,
+    // for the null character '\0', which indicates the end of the string.
+    char chars[17] = "Programming in C";
+    arr_len = ARRAY_LEN(chars);
+    print_arr_char(chars, arr_len);
+    // output: Programming in C
+
     /***************************************************************************
      * 1D array
      **************************************************************************/
 
     int lotto_numbers[] = {4, 8, 15, 16, 23, 41};  // Array with known values
-    int chosen_numbers[5];                         // Array with unknown values
+    int your_numbers[5];                           // Array with unknown values
 
     printf("First number: '%d'\n",
            lotto_numbers[0]);  // Arrays are initialized to 0
@@ -21,15 +70,15 @@ int main() {
 
     // Assign values to the array
     for(int i = 0; i < 5; i++) {
-        chosen_numbers[i] = i * 2;
+        your_numbers[i] = i * 2;
     }
 
-    printf("Chosen numbers: ");
+    printf("Your numbers: ");
 
     for(int i = 0; i < 5; i++) {
-        printf("%d,", chosen_numbers[i]);
+        printf("%d ", your_numbers[i]);
     }
-    // output: Chosen numbers: ....
+    // output: Your numbers: your_numbers
 
     printf("\n\n");
 
